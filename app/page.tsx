@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 "use client"
 
@@ -59,40 +60,43 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce platform with payment integration and admin dashboard.",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      image: "/placeholder.svg?height=600&width=800",
+      title: "StoryHub",
+      description: "The goal of StoryHub is to create an engaging, interactive, and child-friendly storytelling platform that makes reading both fun and educational. Designed specifically for kids, StoryHub allows young readers to explore captivating stories while also testing their comprehension through interactive quizzes.",
+      tags: ["Laravel", "Tailwind CSS", "Javascript", "Turn.js", "MySQL"],
+      image: "/img/storyhub.jpg?height=600&width=800",
       github: "https://github.com",
       demo: "https://example.com",
     },
     {
-      title: "AI Content Generator",
-      description: "An AI-powered application that generates content based on user prompts.",
-      tags: ["Next.js", "OpenAI", "Tailwind CSS", "TypeScript"],
-      image: "/placeholder.svg?height=600&width=800",
+      title: "Hospital Appointment System",
+      description: "As a web development student, I designed and built a Hospital Appointment System using PHP and MySQL as part of my academic project work. This project helped me understand the full web development process. from backend logic to user interface, and even deployment.",
+      tags: ["PHP", "Javascript", "CSS", "MySQL"],
+      image: "/img/appointment-system.jpg?height=600&width=800",
       github: "https://github.com",
       demo: "https://example.com",
     },
     {
-      title: "Social Media Dashboard",
-      description: "A dashboard that aggregates and analyzes social media metrics.",
-      tags: ["Vue.js", "Express", "PostgreSQL", "Chart.js"],
-      image: "/placeholder.svg?height=600&width=800",
+      title: "Accounting System",
+      description: "Web-based accounting application designed to simplify and streamline financial management for businesses of all sizes. The system offers a comprehensive suite of tools for tracking income and expenses, generating financial reports, managing invoices, reconciling transactions, and ensuring accurate bookkeeping. ",
+      tags: ["Laravel", "Livewire", "MySQL", "Chart.js"],
+      image: "/img/truesight2.jpg?height=600&width=800",
       github: "https://github.com",
       demo: "https://example.com",
     },
   ]
 
   const skills = [
-    { name: "JavaScript", level: 90 },
-    { name: "React", level: 85 },
-    { name: "Node.js", level: 80 },
-    { name: "TypeScript", level: 75 },
+    { name: "PHP", level: 95 },
+    { name: "Laravel", level: 95 },
     { name: "HTML/CSS", level: 95 },
-    { name: "Python", level: 70 },
-    { name: "SQL", level: 65 },
-    { name: "AWS", level: 60 },
+    { name: "JavaScript", level: 90 },
+    { name: "MySQL", level: 90 },
+    { name: "React.js", level: 85 },
+    { name: "Vue.js", level: 85 },
+    { name: "TypeScript", level: 85 },
+    { name: "Flutter", level: 70 },
+    { name: "MongoDB", level: 70 },
+    { name: "WordPress", level: 60 },
   ]
 
   return (
@@ -149,9 +153,9 @@ export default function Portfolio() {
         >
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
             <span className="block">Hi, I'm </span>
-            <span className="block mt-2 text-primary">John Doe</span>
+            <span className="block mt-2 text-primary">Aaron Christian Arenas</span>
           </h1>
-          <p className="mt-6 text-xl text-muted-foreground">Full Stack Developer & UI/UX Designer</p>
+          <p className="mt-6 text-xl text-muted-foreground">Full Stack Developer</p>
           <div className="flex items-center justify-center mt-8 space-x-4">
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
               <Button onClick={() => scrollToSection("contact")} variant="default">
@@ -166,7 +170,7 @@ export default function Portfolio() {
           </div>
           <div className="flex items-center justify-center mt-12 space-x-6">
             <motion.a
-              href="https://github.com"
+              href="https://github.com/eyron03"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, rotate: 5 }}
@@ -177,7 +181,7 @@ export default function Portfolio() {
               <span className="sr-only">GitHub</span>
             </motion.a>
             <motion.a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/eyronarenas/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, rotate: 5 }}
@@ -188,7 +192,7 @@ export default function Portfolio() {
               <span className="sr-only">LinkedIn</span>
             </motion.a>
             <motion.a
-              href="mailto:example@example.com"
+              href="mailto:aaronchristianarenas50@gmail.com"
               whileHover={{ scale: 1.2, rotate: 5 }}
               whileTap={{ scale: 0.9 }}
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -240,10 +244,10 @@ export default function Portfolio() {
               className="relative"
             >
               <div className="aspect-square overflow-hidden rounded-2xl border-4 border-primary/20">
-                <img src="/placeholder.svg?height=600&width=600" alt="Profile" className="object-cover w-full h-full" />
+                <img src="/img/profile.jfif?height=600&width=600" alt="Profile" className="object-cover w-full h-full" />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-4 rounded-lg shadow-lg">
-                <p className="font-bold">5+ Years Experience</p>
+                <p className="font-bold">2+ Years Experience</p>
               </div>
             </motion.div>
 
@@ -257,26 +261,26 @@ export default function Portfolio() {
             >
               <h3 className="text-2xl font-bold mb-4">Who I Am</h3>
               <p className="text-muted-foreground mb-6">
-                I'm a passionate Full Stack Developer with expertise in building responsive and performant web
-                applications. With a strong foundation in both frontend and backend technologies, I create seamless user
-                experiences that solve real-world problems.
+                Hi! I'm Aaron, a full stack web developer with a passion for making the digital world
+                a better place, one code commit at a time. With advanced proficiency in PHP and JavaScript,
+                I'm an expert at crafting cutting-edge, high-performance, and scalable web solutions for individuals
+                and organizations. As a developer, I possess an intimate knowledge of both front-end and back-end
+                development, enabling me to tackle projects from a holistic perspective and provide smooth user experiences.
+                Whether you require a basic website or a sophisticated web-based system, I possess the skills and expertise to make your vision a reality.
               </p>
-              <p className="text-muted-foreground mb-6">
-                My journey in tech began 5 years ago, and since then, I've worked with various startups and established
-                companies to deliver high-quality software solutions.
-              </p>
+              
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div>
                   <p className="font-medium">Name:</p>
-                  <p className="text-muted-foreground">John Doe</p>
+                  <p className="text-muted-foreground">Aaron Christian Arenas</p>
                 </div>
                 <div>
                   <p className="font-medium">Email:</p>
-                  <p className="text-muted-foreground">example@example.com</p>
+                  <p className="text-muted-foreground">aaronchristianarenas50@gmail.com</p>
                 </div>
                 <div>
                   <p className="font-medium">Location:</p>
-                  <p className="text-muted-foreground">San Francisco, CA</p>
+                  <p className="text-muted-foreground">Pangasinan, Philippines</p>
                 </div>
                 <div>
                   <p className="font-medium">Availability:</p>
@@ -284,7 +288,11 @@ export default function Portfolio() {
                 </div>
               </div>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button variant="default">Download Resume</Button>
+               <Button variant="default" asChild>
+                  <a href="/CV_Aaron Christian Arenas_Web Developer.pdf" download="CV_Aaron Christian Arenas_Web Developer.pdf">
+                    Download Resume
+                  </a>
+                </Button>
               </motion.div>
             </motion.div>
           </div>
@@ -323,7 +331,7 @@ export default function Portfolio() {
           >
             <Button variant="outline" asChild>
               <Link
-                href="https://github.com"
+                href="https://github.com/eyron03"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center"
@@ -479,7 +487,7 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <h4 className="font-medium">Email</h4>
-                    <p className="text-muted-foreground">example@example.com</p>
+                    <p className="text-muted-foreground">aaronchristianarenas50@gmail.com</p>
                   </div>
                 </div>
 
@@ -489,7 +497,7 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <h4 className="font-medium">LinkedIn</h4>
-                    <p className="text-muted-foreground">linkedin.com/in/johndoe</p>
+                    <p className="text-muted-foreground">linkedin.com/in/eyronarenas</p>
                   </div>
                 </div>
 
@@ -499,7 +507,7 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <h4 className="font-medium">GitHub</h4>
-                    <p className="text-muted-foreground">github.com/johndoe</p>
+                    <p className="text-muted-foreground">github.com/eyron03</p>
                   </div>
                 </div>
               </div>
@@ -508,7 +516,7 @@ export default function Portfolio() {
                 <h3 className="text-xl font-bold mb-4">Let's Connect</h3>
                 <div className="flex space-x-4">
                   <motion.a
-                    href="https://github.com"
+                    href="https://github.com/eyron03"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1, rotate: 5 }}
@@ -519,7 +527,7 @@ export default function Portfolio() {
                     <span className="sr-only">GitHub</span>
                   </motion.a>
                   <motion.a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/eyronarenas/"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1, rotate: 5 }}
@@ -530,7 +538,7 @@ export default function Portfolio() {
                     <span className="sr-only">LinkedIn</span>
                   </motion.a>
                   <motion.a
-                    href="mailto:example@example.com"
+                    href="mailto:aaronchristianarenas50@gmail.com"
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     whileTap={{ scale: 0.9 }}
                     className="bg-card p-3 rounded-full border hover:border-primary transition-colors"
