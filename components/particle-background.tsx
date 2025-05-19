@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 
 import { useEffect, useRef } from "react"
@@ -66,6 +67,7 @@ export default function ParticleBackground() {
 
     const handleMouseLeave = () => {
       mouseRef.current.x = undefined as any
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       mouseRef.current.y = undefined as any
     }
 
