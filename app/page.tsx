@@ -247,7 +247,7 @@ export default function Portfolio() {
                 <img src="/img/profile.jfif?height=600&width=600" alt="Profile" className="object-cover w-full h-full" />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-4 rounded-lg shadow-lg">
-                <p className="font-bold">2+ Years Experience</p>
+                <p className="font-bold">1+ Years Experience</p>
               </div>
             </motion.div>
 
@@ -395,15 +395,15 @@ export default function Portfolio() {
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 rounded-full bg-primary mr-2"></div>
-                  <span>Redux</span>
+                  <span>ShadCN UI</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 rounded-full bg-primary mr-2"></div>
-                  <span>Framer Motion</span>
+                  <span>Flux UI</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 rounded-full bg-primary mr-2"></div>
-                  <span>SASS/SCSS</span>
+                  <span>Responsive Design</span>
                 </li>
               </ul>
             </div>
@@ -417,7 +417,7 @@ export default function Portfolio() {
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 rounded-full bg-primary mr-2"></div>
-                  <span>Express.js</span>
+                  <span>Authentication & Authorization</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 rounded-full bg-primary mr-2"></div>
@@ -425,15 +425,15 @@ export default function Portfolio() {
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 rounded-full bg-primary mr-2"></div>
-                  <span>PostgreSQL</span>
+                  <span>SQLite</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 rounded-full bg-primary mr-2"></div>
-                  <span>Firebase</span>
+                  <span>ORM Tools (Prisma/Drizzle)</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 rounded-full bg-primary mr-2"></div>
-                  <span>GraphQL</span>
+                  <span>PHP</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 rounded-full bg-primary mr-2"></div>
@@ -441,7 +441,7 @@ export default function Portfolio() {
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 rounded-full bg-primary mr-2"></div>
-                  <span>AWS</span>
+                  <span>Laravel</span>
                 </li>
               </ul>
             </div>
