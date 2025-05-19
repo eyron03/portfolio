@@ -4,7 +4,7 @@ import { Toaster } from "sonner"
 import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata = {
-  title: "Interactive Portfolio",
+  title: "Portfolio - Aaron Christian Arenas",
   description: "A modern, interactive portfolio showcasing my work and skills",
 }
 

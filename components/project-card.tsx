@@ -1,8 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 
 import { motion } from "framer-motion"
-import { ExternalLink, Github } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
@@ -27,43 +26,54 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
+      className="h-full"
     >
-      <Card className="overflow-hidden group h-full flex flex-col">
-        <div className="relative overflow-hidden">
-          <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }} className="aspect-video">
-            <img src={project.image || "/placeholder.svg"} alt={project.title} className="object-cover w-full h-full" />
+      <div className="relative h-full group">
+        {/* The card itself */}
+        <Card className="overflow-visible h-full flex flex-col relative z-10">
+          <div className="relative w-full overflow-visible">
+            {/* Image container with overflow visible to allow image to pop out */}
+            <div className="w-full h-48 md:h-56 lg:h-64 bg-muted overflow-visible relative">
+              {/* Empty space that maintains the layout when image pops out */}
+              <div className="w-full h-full"></div>
+            </div>
+          </div>
+          <CardContent className="flex flex-col flex-grow p-5 relative z-10">
+            <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors duration-300">
+              {project.title}
+            </h3>
+            <p className="text-muted-foreground mb-4 flex-grow">{project.description}</p>
+            <div className="flex flex-wrap gap-2 mt-auto">
+              {project.tags.map((tag, i) => (
+                <Badge key={i} variant="secondary" className="font-normal">
+                  {tag}
+                </Badge>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* The image that pops out on hover */}
+        <div className="absolute top-0 left-0 right-0 w-full h-48 md:h-56 lg:h-64 overflow-visible z-20">
+          <motion.div
+            className="w-full h-full relative"
+            whileHover={{
+              scale: 1.15,
+              y: -10,
+              transition: { duration: 0.3, ease: "easeOut" }
+            }}
+          >
+            <img
+              src={project.image || "/placeholder.svg"}
+              alt={project.title}
+              className="w-full h-full  rounded-t-lg shadow-xl"
+            />
+            
+            {/* Shadow effect that enhances the 3D pop-out appearance */}
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-[0_20px_25px_-5px_rgba(0,0,0,0.3)] rounded-t-lg"></div>
           </motion.div>
-          <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center gap-4 transition-opacity duration-300">
-            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-              <Button size="sm" variant="secondary" asChild>
-                <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center">
-                  <Github className="mr-2 h-4 w-4" />
-                  Code
-                </a>
-              </Button>
-            </motion.div>
-            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-              <Button size="sm" variant="default" asChild>
-                <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex items-center">
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  Demo
-                </a>
-              </Button>
-            </motion.div>
-          </div>
         </div>
-        <CardContent className="flex flex-col flex-grow p-5">
-          <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-          <p className="text-muted-foreground mb-4 flex-grow">{project.description}</p>
-          <div className="flex flex-wrap gap-2 mt-auto">
-            {project.tags.map((tag, i) => (
-              <Badge key={i} variant="secondary" className="font-normal">
-                {tag}
-              </Badge>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
+      </div>
     </motion.div>
   )
 }
