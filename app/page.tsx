@@ -565,7 +565,7 @@ export default function Portfolio() {
       <footer className="py-8 px-4 border-t">
         <div className="container mx-auto max-w-5xl">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-muted-foreground">© {new Date().getFullYear()} John Doe. All rights reserved.</p>
+            <p className="text-muted-foreground">© {new Date().getFullYear()} Aaron Christian Arenas. All rights reserved.</p>
             <div className="flex items-center space-x-4 mt-4 md:mt-0">
               <a href="#home" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 Home
