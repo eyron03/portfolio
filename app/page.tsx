@@ -170,7 +170,7 @@ export default function Portfolio() {
           </div>
           <div className="flex items-center justify-center mt-12 space-x-6">
             <motion.a
-              href="https://github.com/eyron03"
+              href="https://github.com/eyronarenas"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, rotate: 5 }}
@@ -331,7 +331,7 @@ export default function Portfolio() {
           >
             <Button variant="outline" asChild>
               <Link
-                href="https://github.com/eyron03"
+                href="https://github.com/eyronarenas"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center"
@@ -507,7 +507,7 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <h4 className="font-medium">GitHub</h4>
-                    <p className="text-muted-foreground">github.com/eyron03</p>
+                    <p className="text-muted-foreground">github.com/eyronarenas</p>
                   </div>
                 </div>
               </div>
@@ -516,7 +516,7 @@ export default function Portfolio() {
                 <h3 className="text-xl font-bold mb-4">Let's Connect</h3>
                 <div className="flex space-x-4">
                   <motion.a
-                    href="https://github.com/eyron03"
+                    href="https://github.com/eyronarenas"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1, rotate: 5 }}
